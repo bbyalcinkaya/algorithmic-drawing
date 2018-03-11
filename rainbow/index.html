@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Hello!</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body, html {
             position: absolute;
@@ -17,59 +16,10 @@
             height: 100%;
             width: 100%;
         }
-        a {
-          text-decoration: none;
-          color: inherit;
-          font-weight: bold;
-        }
-        .card {
-        
-            text-align: center;
-            padding: 3px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-            transition: 0.3s;
-            width: 10em;
-            position: absolute;
-            left: 5px;
-            top: 5px;
-            z-index: 1;
-            background: #222;
-            font-family: monospace;
-            font-size: 120%;
-            color: #DDD;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-        }
-
-        .container {
-            padding: 2px 16px;
-            
-        }
-        .card h4 , .card h5{
-          margin: 5px; 
-        }
-        #avatar {
-          width: 100%;
-        }
     </style>
   </head>
   <body>
-    <div class="card">
-      <img src="avatar.jpg" alt="Avatar" id="avatar">
-      <div class="container">
-        <h4>burak bilge yalçınkaya</h4>
-        <h5>junior <a target="_blank" href="http://bb.itu.edu.tr/en/">@ITU CE</a></h5>
-        <a target="_blank" href="https://github.com/bbyalcinkaya" class="fa fa-github-square"></a>
-        <a target="_blank" href="https://linkedin.com/in/bbyalcinkaya" class="fa fa-linkedin-square"></a>
-        <a target="_blank" id="mailto" class="fa fa-envelope-square"></a>
-        <a target="_blank" href="https://hackerrank.com/bbyalcinkaya" >H</a>
-         
-      </div>
-    </div>
     <script>
-        
         var particles;
         function setup() {
           var cnv = createCanvas(windowWidth, windowHeight);
@@ -91,8 +41,8 @@
           for(var i=0; i<particles ; i++){
             stroke(360*i/particles, 50, 100, 0.05);
             point(
-              i*cos(i*frameCount/12000.0),
-              i*sin(i*frameCount/3000.0)
+              i*cos(i*frameCount/4000.0),
+              i*sin(i*frameCount/4000.0)
             );
           }
         }
