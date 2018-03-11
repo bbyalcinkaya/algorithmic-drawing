@@ -1,6 +1,6 @@
 # Algorithmic Drawing
 
-* [Portrait](portrait/README.md)
+* [Portrait](portrait)
 
-* [Rainbow](rainbow/index.html)
+* [Rainbow](rainbow)
   
