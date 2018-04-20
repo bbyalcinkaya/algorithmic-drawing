@@ -19,8 +19,8 @@ function draw(){
   for(var i=0; i<particles ; i++){
     stroke(360*i/particles, 50, 100, 0.05);
     point(
-      i*cos((particles-i-1)*frameCount/4000.0),
-      i*sin((particles-i-1)*frameCount/4000.0)
+      i*cos((particles-i-1)*frameCount/2000.0),
+      i*sin((particles-i-1)*frameCount/2000.0)
     );
   }
 } 
