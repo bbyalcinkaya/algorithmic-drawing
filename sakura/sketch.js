@@ -1,4 +1,4 @@
-var seed, geo;
+var seed, geo, base = 800, ratio;
 
 function thickf(rat, thick){
   return thick*pow(rat,0.5);
@@ -25,10 +25,10 @@ function drawTree(x1, y1,x2, y2,x3, y3, len, thick, angle){
     leaf(x2,y2);
   } 
   else {
-    strokeWeight( thick );
+    strokeWeight( thick * ratio);
     stroke(0,0,20);
     noFill();
-    curve( x1 , y1, x2, y2,x3, y3, x4, y4);
+    curve( x1 * ratio , y1 * ratio, x2 * ratio, y2 * ratio, x3 * ratio, y3 * ratio, x4 * ratio, y4 * ratio);
 
     var rat = randomGaussian(0.5,0.2);
     rat = min(0.9, rat);
@@ -55,7 +55,7 @@ function leaf(x, y){
   push();
   fill(300, random(10,50), 80, 30);
   noStroke();
-  ellipse(x, y, random(4,10));
+  ellipse(x * ratio, y * ratio, random(4,10) * ratio);
   
   pop();
 }
@@ -63,6 +63,7 @@ function leaf(x, y){
 
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
+  ratio = min(width, height)/base;
   seed = parseInt(random(0,987654321));
   console.log(seed, geo);
   noLoop();
