@@ -1,7 +1,7 @@
 var copters, img;
 
 function preload() {
-  img = loadImage('instr.png');
+  img = loadImage('https://bbyalcinkaya.github.io/algorithmic-drawing/papercopter/instr.png');
 }
 
 function setup() {
