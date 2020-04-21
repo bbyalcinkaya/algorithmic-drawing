@@ -1,7 +1,5 @@
 # Algorithmic Drawing
 
-* [Portrait](portrait)
-
 * [Spiral Rainbow](rainbow)
   
 * [Spiral Rainbow-reversed](rainbow-reversed)
@@ -15,3 +13,7 @@
 * [Circles](circles)
 
 * [Papercopter](papercopter)
+
+* [Tridiv (Processing)](portrait)
+
+* [Tridiv (p5.js)](tridiv)
