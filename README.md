@@ -12,4 +12,6 @@
 
 * [Sakura](sakura)
 
+* [Circles](circles)
+
 * [Papercopter](papercopter)
