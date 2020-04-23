@@ -15,7 +15,7 @@ function setup() {
 
   background(0, 0, 0);
   strokeWeight(1);
-  stroke(255, 20);
+  stroke(255, 50);
 
   divtri(0, 0, img.width, 0, img.width, img.height, 0); // upper triangle
   line(0, 0, img.width, img.height);
@@ -29,7 +29,7 @@ function draw() {
   translate((width - img.width) / 2, (height - img.height) / 2);
 
 
-  for (var i = 0; i < 200 && q.length > 0; i++) {
+  for (var i = 0; i < 50 && q.length > 0; i++) {
     var params = q.shift();
     divtriWork(params[0], params[1], params[2], params[3], params[4], params[5], params[6]);
   }
